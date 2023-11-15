@@ -1,0 +1,30 @@
+#skills {
+  &-block-1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 20px;
+    display: flex;
+
+    figure {
+      opacity: 0.75;
+      background-color: $theme_color_1;
+      margin: 0 5px;
+      padding: 10px 10px 0;
+    }
+
+    figcaption {
+      color: $theme_color_0;
+      padding-bottom: 10px;
+    }
+  }
+
+  &-block-2 {
+    ul {
+      columns: 2;
+
+      li {
+        font-size: small;
+      }
+    }
+  }
+}

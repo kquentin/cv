@@ -1,0 +1,14 @@
+#introduction {
+  margin-bottom: 40px;
+
+  ul {
+    columns: 2;
+  }
+
+  .state {
+    color: $theme_color_0;
+    background-color: $theme_color_1;
+    padding: 1px;
+    font-weight: bold;
+  }
+}

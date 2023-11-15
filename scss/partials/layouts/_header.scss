@@ -1,0 +1,55 @@
+header {
+  display: flex;
+  justify-content: space-between;
+
+
+  #band-container {
+    width: 40vw;
+    height: 20vh;
+    position: relative;
+    overflow: hidden;
+
+    .band {
+      transform-origin: 0 0;
+      border: 1px solid $theme_color_1;
+      width: 100vw;
+      height: 25px;
+      position: absolute;
+      top: 100px;
+      left: -40px;
+      transform: rotate(-40deg);
+    }
+
+    a {
+      font-size: small;
+      font-weight: bold;
+      text-decoration: none;
+      position: absolute;
+      top: 30px;
+      left: -5px;
+      transform: rotate(-40deg);
+    }
+
+    a::after {
+      content: "|";
+      margin-right: 5px;
+      animation: blinker 1s linear infinite;
+    }
+  }
+
+  #author-container {
+    padding: 10px;
+
+    p, a {
+      text-align: right;
+      font-size: xx-small;
+      margin: 0;
+    }
+  }
+
+  @keyframes blinker {
+    50% {
+      opacity: 0;
+    }
+  }
+}

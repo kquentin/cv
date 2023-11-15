@@ -1,0 +1,17 @@
+{
+  "name": "qko",
+  "scripts": {
+    "build": "parcel build index.html --no-source-maps",
+    "dev": "parcel index.html",
+    "start": "npm run build && npm run dev"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.10.2",
+    "@parcel/transformer-jsonld": "^2.10.2",
+    "@parcel/transformer-sass": "^2.10.2",
+    "parcel": "^2.10.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
